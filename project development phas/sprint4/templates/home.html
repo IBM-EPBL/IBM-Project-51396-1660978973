@@ -1,0 +1,121 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{{url_for('static',filename = 'js/country.js')}}"></script>
+
+</head>
+<!-- <h2>Home Page</h2>
+<p>This is the home page!</p>
+
+
+<form action="/account" method="POST">
+    <input type="text" name="name" id="name" placeholder="Your Name" class="form-feild"><br>
+    <button type="submit" class="add-btn">See Account Page</button>
+</form>
+<br> -->
+<!-- 
+<p>Note how this page can be accesed on both '/' and '/home'. Look into app.py for more information</p> -->
+<!----------------------------------------------------------------------------------------------------------->
+<center>
+        <h4>Recent Jobs</h4><br><br>
+    </center>
+<div class="recjobs">
+    <div class="setcard">
+        <div class="jobcard">
+            <div class="set-1">
+             <p>Amazon</p>
+           </div><br>
+           <p>London, UK</p><hr>
+           <h5>UI/UX Designer</h5>
+           <h6>$30k - $50k</h6>
+           <div class="skillneed">
+               <p>Adobe XD</p>
+               <p>Figma</p>
+           </div><br>
+           <a href="/success" >Apply</a>
+        </div>
+    </div>
+
+    <div class="setcard">
+        <div class="jobcard">
+            <div class="set-1">
+             <p>Whatsapp</p>
+           </div><br>
+           <p>Washington, America</p><hr>
+           <h5>Program Analyst</h5>
+           <h6>$43k - $75k</h6>
+           <div class="skillneed">
+               <p>C</p>
+               <p>Java</p>
+           </div><br>
+           <a href="/success" >Apply</a>
+        </div>
+    </div>
+
+    <div class="setcard">
+        <div class="jobcard">
+            <div class="set-1">
+             <p>Amazon</p>
+           </div><br>
+           <p>London, UK</p><hr>
+           <h5>UI/UX Designer</h5>
+           <h6>$30k - $50k</h6>
+           <div class="skillneed">
+               <p>Adobe XD</p>
+               <p>Figma</p>
+           </div><br>
+           <a href="/success" >Apply</a>
+        </div>
+    </div>
+
+    <div class="setcard">
+        <div class="jobcard">
+            <div class="set-1">
+             <p>Amazon</p>
+           </div><br>
+           <p>London, UK</p><hr>
+           <h5>UI/UX Designer</h5>
+           <h6>$30k - $50k</h6>
+           <div class="skillneed">
+               <p>Adobe XD</p>
+               <p>Figma</p>
+           </div><br>
+           <a href="/success" >Apply</a>
+        </div>
+    </div>
+    
+    <div class="setcard">
+        <div class="jobcard">
+            <div class="set-1">
+             <p>{{title}}</p>
+             {{sal}}
+           </div><br>
+           <p>{{loc}}</p><hr>
+           <div class="skillneed">
+               {{skills}}
+           </div><br>
+           <a href="/success" >Apply</a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-------------------------------------SECTION - 6------------->
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "f6b94708-b701-4a79-bac8-dae0cfe1403c", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "06cbeaa1-b28e-41d9-9414-e5593c7c2f6c", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
