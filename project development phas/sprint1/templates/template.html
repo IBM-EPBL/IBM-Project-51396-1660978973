@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../static/style/register.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../static/images/j.png" type="image/x-icon">
+    <title>Jobby - Register</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+     <script src="../static/js/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<img src="{{url_for('static',filename = 'images/registerpg.jpg')}}"><br><br><br>
+	<center>
+		<h3>Registration on Jobby</h3><Br> 	
+	</center>
+
+
+
+<form name="form" onsubmit="required()" method="POST" enctype="multipart/form-data">
+    <div id="Accountinfo">
+        <div class="heading" >
+        <div class="verbor" id="verbor"></div>
+            <h4>Account Info</h4>
+        </div>
+        <div class="row Accountinfo">
+            <div class="col-md-4 regr1col1">
+	   	       <label>E-mail Id <a id="requi">*</a></label><br>
+		       <input type="email" name="email" placeholder="Enter the mail address">
+	       </div>
+	   <div class="col-md-4 regr1col2">
+		       <label>Password <a id="requi">*</a></label><br>
+		       <input type="text" name="password" placeholder="Enter the mail address">
+	   </div>
+	   <div class="col-md-4 regr1col2">
+		       <label>Confirm Password <a id="requi">*</a></label><br>
+		       <input type="text" name="conpassword" placeholder="Enter the mail address">
+	   </div>
+	</div><Br><Br>
+	
+    <center>
+        <input type="button" id="button"onclick="persondetFun()" value="Save & Continue" readonly>   
+    </center>
+     
+  </div>
+
+  <div id="menu">
+    <ul type="none">
+        <li>
+            <i class="fa fa-address-card" aria-hidden="true" id="svglogo" onclick="persondetFun()">&nbsp; Personal Info <i class="fa fa-check" id="check"aria-hidden="true" style="color: green;"></i></i>
+        </li>
+        
+        <li>
+            <i class="fa fa-address-card" aria-hidden="true" id="svglogo" onclick="educationalFun()">&nbsp; Educational Info <i class="fa fa-check" id="check2"aria-hidden="true" style="color: green;"></i></i>
+        </li>
+
+        <li>
+            <i class="fa fa-address-card" aria-hidden="true" id="svglogo" onclick="skillsFun()">&nbsp;  Skills and Achievements <i class="fa fa-check" id="check3"aria-hidden="true" style="color: green;"></i></i>
+        </li>
+
+        <li>
+            <i class="fa fa-address-card" aria-hidden="true" id="svglogo" onclick="declaretFun()">&nbsp; Resume & Declaration</i></i>
+        </li>
+            
+
+    </ul>
+</div><br><br>
+<center>
+        <p id="warning"></p>
+</center><br><br>
+    <div id="persondet">
+    <div class="heading" id="head2">
+    <div class="verbor" id="verbor"></div>
+    <h4>Personal Details</h4>
+    </div>
+    <br>
+    <div class="row persondet">
+	<div class="col-md-4 regr1col1">
+		<label>First Name <a id="requi">*</a></label><br>
+		<input type="text" name="firstname" placeholder="Enter your first name">
+	</div>
+	<div class="col-md-4 regr1col2">
+		<label>Middle Name</label><br>
+		<input type="text" name="middlename" placeholder="Enter your middle name">
+	</div>
+	<div class="col-md-4 regr1col2">
+		<label>Last Name <a id="requi">*</a></label><br>
+		<input type="text" name="lastname" placeholder="Enter your last name">
+	</div>
+	</div><Br>
+
+	<div class="row persondet2" id="persondet2">
+	<div class="col-md-4 regr1col1">
+		<la
