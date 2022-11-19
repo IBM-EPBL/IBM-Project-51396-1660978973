@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../static/style/orgregister.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<img src="{{url_for('static',filename = 'images/registerpg.jpg')}}"><br><br><br>
+	<center>
+		<h3>Registration on Jobby</h3><Br> 	
+	</center>
+
+
+
+<form name="form_org" action="/orgregister_api" method="POST">
+    <div id="Accountinfo">
+        <div class="heading" id="head1">
+        <div class="verbor"></div>
+            <h4>Account Info</h4>
+        </div>
+        <div class="row Accountinfo">
+            <div class="col-md-4 regr1col1">
+	   	       <label>Organization E-mail Id <a id="requi">*</a></label><br>
+		       <input type="email" name="email" placeholder="Enter the mail address">
+	       </div>
+	   <div class="col-md-4 regr1col2">
+		       <label>Password <a id="requi">*</a></label><br>
+		       <input type="password" name="password" placeholder="Enter the password">
+	   </div>
+	   <div class="col-md-4 regr1col2">
+		       <label>Confirm Password <a id="requi">*</a></label><br>
+		       <input type="password" name="password1" placeholder="Confirm password">
+	   </div>
+	</div><Br><Br>
+	
+    <center>
+        <button type="submit" id="button">Save & Continue</a>   
+    </center>
+     
+  </div>
